@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>208201254796-mp3ho1e3e1hgq34t7h4k6h0n7f1ji7kt.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.208201254796-mp3ho1e3e1hgq34t7h4k6h0n7f1ji7kt</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>208201254796-hst6anedu789r10jbacdh0128ig38015.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyD5Ny2kRkPNoOaueBkNUuGfo3hTEQ2BZ6c</string>
+	<key>GCM_SENDER_ID</key>
+	<string>208201254796</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.omevision.biggy237</string>
+	<key>PROJECT_ID</key>
+	<string>biggy237-2aa02</string>
+	<key>STORAGE_BUCKET</key>
+	<string>biggy237-2aa02.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:208201254796:ios:de91a3c729191812f178a9</string>
+	<key>DATABASE_URL</key>
+	<string>https://biggy237-2aa02.firebaseio.com</string>
+</dict>
+</plist>

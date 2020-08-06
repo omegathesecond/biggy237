@@ -58,7 +58,8 @@ TextStyle textSyle() {
 }
 
 TextStyle scanStyle() {
-  return TextStyle(fontSize: 16, color: accentColor, fontWeight: FontWeight.w600);
+  return TextStyle(
+      fontSize: 16, color: accentColor, fontWeight: FontWeight.w600);
 }
 
 TextStyle btnTextStyle() {
@@ -75,3 +76,7 @@ TextStyle ggleBtn() {
     color: Colors.black54,
   );
 }
+
+ const double regularPadding = 8;
+ const double doublePadding = 16;
+ const double largePadding = 24.0;
