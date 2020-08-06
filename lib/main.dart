@@ -12,6 +12,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Biggy237',
+      debugShowCheckedModeBanner: false,
       theme: getTheme(),
       onGenerateRoute: RouteGenerator.generateRoute,
     );
