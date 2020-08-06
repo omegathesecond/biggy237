@@ -1,3 +1,4 @@
+import 'package:biggy237/ui/screens/base/base.dart';
 import 'package:biggy237/ui/screens/home/home_screen.dart';
 import 'package:flutter/material.dart';
 
@@ -8,7 +9,7 @@ class RouteGenerator {
     switch (settings.name) {
       case "/":
         return MaterialPageRoute(
-            settings: RouteSettings(name: "/"), builder: (_) => HomeScreen());
+            settings: RouteSettings(name: "/"), builder: (_) => BaseScreen());
         break;
 
       default:
