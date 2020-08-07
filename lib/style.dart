@@ -1,20 +1,32 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
-final primaryColor = const Color(0xFF00AB9F);
-final secondaryColor = const Color(0xFF52898B);
-final accentColor = const Color(0xFFF89623);
-final bgColor = const Color(0xFF273742);
+const kBackgroundColor = Color(0xFFF1EFF1);
+const kPrimaryColor = Color(0xFF035AA6);
+const kSecondaryColor = Color(0xFFFFA41B);
+const kTextColor = Color(0xFF000839);
+const kTextLightColor = Color(0xFF747474);
+const kBlueColor = Color(0xFF40BAD5);
+const kDefaultPadding = 20.0;
+
+// our default Shadow
+const kDefaultShadow = BoxShadow(
+  offset: Offset(0, 15),
+  blurRadius: 27,
+  color: Colors.black12, // Black color with 12% opacity
+);
 
 final greyBackground = const Color.fromRGBO(249, 252, 255, 1);
 final greyBorder = const Color.fromRGBO(207, 207, 207, 1);
 
 //--------------------------- Theme data ----------------------------
 
-ThemeData getTheme() {
+ThemeData getTheme(BuildContext context) {
   return ThemeData(
-    visualDensity: VisualDensity.adaptivePlatformDensity,
-    fontFamily: 'montesserat',
-  );
+      primaryColor: kPrimaryColor,
+      accentColor: kPrimaryColor,
+      visualDensity: VisualDensity.adaptivePlatformDensity,
+      textTheme: GoogleFonts.poppinsTextTheme(Theme.of(context).textTheme));
 }
 
 //--------------------------- screen height & width ----------------------------
@@ -52,14 +64,14 @@ TextStyle subTitleStyle() {
 TextStyle textSyle() {
   return TextStyle(
     fontSize: 18.0,
-    color: bgColor,
+    color: kPrimaryColor,
     fontWeight: FontWeight.w600,
   );
 }
 
 TextStyle scanStyle() {
   return TextStyle(
-      fontSize: 16, color: accentColor, fontWeight: FontWeight.w600);
+      fontSize: 16, color: kPrimaryColor, fontWeight: FontWeight.w600);
 }
 
 TextStyle btnTextStyle() {
@@ -77,6 +89,6 @@ TextStyle ggleBtn() {
   );
 }
 
- const double regularPadding = 8;
- const double doublePadding = 16;
- const double largePadding = 24.0;
+const double regularPadding = 8;
+const double doublePadding = 16;
+const double largePadding = 24.0;

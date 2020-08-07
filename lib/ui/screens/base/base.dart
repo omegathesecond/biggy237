@@ -1,7 +1,6 @@
 import 'package:biggy237/style.dart';
 import 'package:biggy237/ui/screens/chat/chat_screen.dart';
-import 'package:biggy237/ui/screens/contestants/contestants.dart';
-import 'package:biggy237/ui/screens/highlights/highlights_screen.dart';
+import 'package:biggy237/ui/screens/contestants/contestants_screen.dart';
 import 'package:biggy237/ui/screens/home/home_screen.dart';
 import 'package:biggy237/ui/screens/profile/profile_screen.dart';
 import 'package:fancy_bottom_navigation/fancy_bottom_navigation.dart';
@@ -28,27 +27,13 @@ class _BaseScreenState extends State<BaseScreen> {
   Widget build(BuildContext context) {
     final FancyBottomNavigationState fState = bottomNavigationKey.currentState;
     return Scaffold(
+      backgroundColor: kPrimaryColor,
       appBar: AppBar(
-        actions: [
-          Padding(
-            padding: const EdgeInsets.only(right: 8.0),
-            child: Icon(
-              Icons.message,
-              color: primaryColor,
-            ),
-          )
-        ],
         elevation: 0,
-        backgroundColor: Colors.white,
+        centerTitle: false,
+        title: Text("Biggy237"),
       ),
-      backgroundColor: Colors.white,
-
-      ///TODO: decide to include or not
-      // appBar: AppBar(
-      //   title: Text("Biggy237"),
-      // ),
-      body: _screens[_currentIndex],
-
+      body: SafeArea(child: _screens[_currentIndex]),
       bottomNavigationBar: FancyBottomNavigation(
         tabs: [
           TabData(

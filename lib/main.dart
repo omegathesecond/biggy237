@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Biggy237',
       debugShowCheckedModeBanner: false,
-      theme: getTheme(),
+      theme: getTheme(context),
       onGenerateRoute: RouteGenerator.generateRoute,
     );
   }
